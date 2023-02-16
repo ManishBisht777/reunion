@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Property from "./property";
 import { propertiesData } from "../../../data/data";
 import Filter from "./Filter";
 
 function Properties() {
-  const [properties, setProperties] = useState();
   const [filteredProperties, setFilteredProperties] = useState(propertiesData);
-
-  useEffect(() => {
-    setProperties(propertiesData);
-  }, []);
+  console.log(filteredProperties);
 
   return (
     <div className="flex flex-col">
       <Filter
-        properties={properties}
+        properties={propertiesData}
         setFilteredProperties={setFilteredProperties}
       />
       <div className="flex justify-center items-center flex-wrap gap-[2rem]">
