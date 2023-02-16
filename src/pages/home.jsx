@@ -1,6 +1,8 @@
+import Properties from "../components/property/Properties";
+
 const Home = () => {
   return (
-    <main>
+    <main className="">
       hi
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
@@ -8,6 +10,7 @@ const Home = () => {
         possimus quaerat magnam natus mollitia nulla cum architecto aperiam,
         debitis ipsa cumque.
       </p>
+      <Properties />
     </main>
   );
 };
