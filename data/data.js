@@ -35,7 +35,7 @@ export const propertiesData = [
         location: "gujrat, IN",
         isPopular: true,
         availableOn: "2023-02-22",
-        type: "complex"
+        type: "apartment"
     },
     {
         name: "property 4",

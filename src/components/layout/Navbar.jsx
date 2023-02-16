@@ -1,9 +1,9 @@
 function Navbar() {
   return (
     <nav className="flex justify-between p-[2rem] items-center mb-[2rem]">
-      <div className="flex gap-5">
+      <div className="flex gap-[4rem] items-center">
         <p className="text-2xl text-gray-800 font-bold"> Estary</p>
-        <ul className="flex gap-4 items-center">
+        <ul className="flex gap-4 items-center text-gray-600">
           <li className="px-2 py-1 hover:bg-purple-100 hover:text-[#6f60f2] font-medium">
             <a href="/">Rent</a>
           </li>

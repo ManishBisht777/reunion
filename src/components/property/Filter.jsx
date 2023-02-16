@@ -18,11 +18,6 @@ const Filter = ({ properties, setFilteredProperties }) => {
   };
 
   useEffect(() => {
-    if (!search) {
-      setFilteredProperties(properties);
-      return;
-    }
-
     const timer = setTimeout(() => {
       setFilteredProperties(filterData(search, properties));
     }, 500);
@@ -37,14 +32,14 @@ const Filter = ({ properties, setFilteredProperties }) => {
           Search Properties to Rent
         </h2>
         <input
-          className="bg-gray-200 px-4 py-2 rounded-md placeholder:text-gray-600"
+          className="bg-gray-200 px-4 py-2 rounded-md placeholder:text-gray-600 font-semibold"
           type="text"
           placeholder="Search Properties"
           name="name"
           onChange={(e) => handleSearchQueryChange(e)}
         />
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <div>
           <p>Location</p>
           <input
